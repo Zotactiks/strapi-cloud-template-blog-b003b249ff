@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rules",
+  "info": {
+    "singularName": "rule",
+    "pluralName": "rules",
+    "displayName": "Rule",
+    "description": "Rules and guidelines."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "city",
+        "in-game"
+      ],
+      "default": "city"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

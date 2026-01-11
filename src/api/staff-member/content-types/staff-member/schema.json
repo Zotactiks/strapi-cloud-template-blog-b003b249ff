@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_members",
+  "info": {
+    "singularName": "staff-member",
+    "pluralName": "staff-members",
+    "displayName": "Staff Member",
+    "description": "Staff team members."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "roleTitle": {
+      "type": "string"
+    },
+    "mainCharacter": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "team": {
+      "type": "enumeration",
+      "enum": [
+        "leadership",
+        "senior-management",
+        "management",
+        "staff"
+      ],
+      "default": "staff"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

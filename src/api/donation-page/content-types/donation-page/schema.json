@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "donation_pages",
+  "info": {
+    "singularName": "donation-page",
+    "pluralName": "donation-pages",
+    "displayName": "Donations Page",
+    "description": "Content for the donations page."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
+    }
+  }
+}

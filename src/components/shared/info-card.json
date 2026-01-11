@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_info_cards",
+  "info": {
+    "displayName": "Info Card",
+    "icon": "information"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
